@@ -1,0 +1,385 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+.header{
+    background-color: #161617;
+    height: 45px;
+    width: 100%;
+    position: fixed;
+    display: block;
+    z-index: 100;
+    font-family: "Avenir", sans-serif;
+}
+
+.header label{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    line-height: 45px;
+    padding: 0 2%;
+    font-weight: bold;
+    font-family: "poppin",sans-serif;
+}
+
+.header label svg{
+    margin-left:1%;
+    margin-right:5px;
+}
+
+.header ul{
+    float: right;
+}
+
+.header ul li{
+    display: inline-block;
+    line-height: 45px;    
+    color: rgb(208, 208, 208);
+}
+
+.header ul li a{
+    display: block;
+    padding: 0px 10px;
+    color: rgb(208, 208, 208);
+}
+
+.header ul li a:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+#last{
+    margin-right: 10px;
+}
+
+.Home{
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+    height: 100vh;
+    place-items: center;
+}
+
+.Home #home1{
+    background-color: #e6dace;
+    height: 100%;
+    width: 100%;
+}
+
+.Home #home2{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.body1{
+    padding-top: 45px;
+}
+
+/* #myphoto{
+    background-color: #f4ece6;
+    height: 400px;
+    width: 350px;
+    position: absolute;
+    z-index: 9;
+    margin-left: 20%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 175px 40px 40px auto 20px 40px;
+    place-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+#photocard{
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+
+#myphoto{
+    text-align: center;
+    height: 400px;
+    width: 350px;
+    background-color: #f4ece6;
+    font-family: 'Avenir', sans-serif;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 175px 40px 40px auto 20px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myphoto img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#myphoto h1{
+    color: black;
+    margin-top: 10px;
+    font-family: "Poppins",sans-serif;
+}
+
+#myphoto #blueline{
+    height: 2px;
+    width: 50px;
+    background-color: blue;
+    margin-bottom: 30px;
+}
+
+#myphoto h6{
+    color: black;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 65px;
+}
+
+#myphoto #social{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#social svg{
+    margin: 15px;
+}
+
+#home2 #content{
+    margin-left: 20%;
+
+}
+
+#aboutme{
+    padding-left: 20px;
+    text-align: left;
+    width: 350px;
+    font-family: 'Avenir', sans-serif;
+    color: white;
+}
+
+#aboutme h1{
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: bolder;
+    margin-top: 0px;
+    font-family: "Poppins",sans-serif;
+}
+
+#aboutme h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+#aboutme #button{
+    display: grid;
+    grid-template-columns: 100px auto;
+    margin-top: 20px;
+}
+
+#aboutme #button #resume{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 20px;
+    width: 80px;
+    line-height: 40px;
+}
+
+#aboutme #button #resume a{
+    display: block;
+    color: white;
+}
+
+#aboutme #button #resume a:hover{
+    color: black;
+}
+
+#aboutme #button #resume:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#aboutme #button #project{
+    background-color: white;
+    width: 80px;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    line-height: 40px;
+}
+
+#aboutme #button #project a{
+    display: block;
+    color: black;
+}
+
+#aboutme #button #project a:hover{
+    color: white;
+}
+
+#aboutme #button #project:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+#aboutme p{
+    margin-top: 20px;
+    line-height: 24px;
+}
+
+.Skills{
+    background-color: white;
+    width: 100%;
+    color: black;
+    align-items: center;
+}
+
+.Skills h1{
+    margin-bottom: 45px;
+    padding-left: 10%;
+}
+
+.Skills .name1{
+    margin: 20px 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.myskills img{
+    height: 100px;
+    width: 100px;
+}
+
+.Frontend{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Frontend div{
+    padding: 20px;
+    text-align: center;
+}
+
+.DSA{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.DSA div{
+    padding: 20px;
+    text-align: center;
+}
+
+.box{
+    margin: 30px 10% 45px 10%;
+    padding: 0px 25px 20px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.MuiDivider-root {
+    border: none;
+    height: 1px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.Frontend p{
+    padding-top: 15px;
+}
+
+.DSA p{
+    padding-top: 15px;
+}
+
+#pro{
+    padding: 45px 0px 0px 10%;
+}
+
+.Project{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    padding: 40px 10% 40px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.black{
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.white{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ContactMe{
+    padding-right: 10%;
+    text-align: right;
+    font-family: "Avenir",sans-serif;
+    margin-bottom: 45px;
+}
+
+.ContactMe h1{
+    padding-bottom: 20px;
+}
+
+#socialmedia{
+    display: grid;
+    grid-template-columns:auto 30px ;
+}
+
+#socialmedia img{
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    line-height: 20px;
+}
+
+#socialmedia a{
+    padding-top: 5px;
+    padding-right: 10px;
+    font-size: 15px;
+    line-height:30px; 
+    color: black; 
+}
+
+.topic{
+    font-size: 40px;
+}
+
+footer{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 16px;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
