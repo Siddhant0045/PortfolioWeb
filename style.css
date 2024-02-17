@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: "Avenir",sans-serif;
 }
 
 body{
@@ -291,7 +292,7 @@ body{
     margin: 20px 0px;
     padding-left: 0px;
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .myskills img{
