@@ -25,14 +25,14 @@ body{
     color: rgb(255, 255, 255);
     font-size: 25px;
     line-height: 45px;
-    padding: 0 10px;
+    padding: 0 15px;
     font-weight: bold;
     font-family: "poppin",sans-serif;
 }
 
 .header label svg{
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:15px;
+    margin-right:15px;
 }
 
 .header ul{
@@ -119,6 +119,21 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@keyframes leftslidein{
+    from{transform:translateX(-100px);}
+    to{transform: translateX(0);}
+}
+
+#myphoto{
+    animation-name: leftslidein;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+
 #myphoto img{
     height: 150px;
     width: 150px;
@@ -168,6 +183,21 @@ body{
     width: 350px;
     font-family: 'Avenir', sans-serif;
     color: white;
+}
+
+@keyframes rightslidein{
+    from{
+        transform: translateX(+100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+#aboutme{
+    animation-name: rightslidein;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
 
 #aboutme h1{
