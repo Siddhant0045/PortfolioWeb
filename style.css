@@ -25,14 +25,14 @@ body{
     color: rgb(255, 255, 255);
     font-size: 25px;
     line-height: 45px;
-    padding: 0 2%;
+    padding: 0 10px;
     font-weight: bold;
     font-family: "poppin",sans-serif;
 }
 
 .header label svg{
-    margin-left:1%;
-    margin-right:5px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .header ul{
