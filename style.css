@@ -20,6 +20,7 @@ body{
     display: block;
     z-index: 100;
     font-family: "Avenir", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header label{
@@ -57,8 +58,82 @@ body{
     color: rgb(255, 255, 255);
 }
 
+.header ul li svg{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: #161617;
+    height: 100%;
+    width: 300px;
+    backdrop-filter: blur(100px);
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+.sidebar label{
+    padding: 0px;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li a{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar ul li a:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
 #last{
     margin-right: 10px;
+}
+
+.sidebarname1{
+    padding-top: 15px;
+    height: 120px;
+    line-height: 60px;
+    font-size: 30px;
+}
+
+@keyframes sidebarslidein{
+    from{
+        transform: translateX(+300px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.sidebar{
+    animation-name: sidebarslidein;
+    animation-duration: 1000ms;
+}
+
+@media (max-width:800px){
+    .originalnavbar ul li{
+        display: none;
+    }
+    .originalnavbar ul li:last-child{
+        display: flex;
+    }
+}
+
+@media (min-width:801px){
+    .originalnavbar ul li:last-child{
+        display: none;
+    }
 }
 
 .Home{
