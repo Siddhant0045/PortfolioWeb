@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: white;
+    background-color: #f5f5f7;
     color: black;
 }
 
@@ -155,10 +155,6 @@ body{
     color: white;
     height: 100%;
     width: 100%;
-}
-
-.body1{
-    padding-top: 45px;
 }
 
 /* #myphoto{
@@ -398,6 +394,7 @@ body{
 }
 
 .box{
+    background-color: white;
     margin: 30px 10% 45px 10%;
     padding: 0px 25px 20px 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -488,4 +485,9 @@ footer{
     width: 100%;
     background-color: black;
     color: white;
+}
+
+.body1{
+    padding-top: 45px;
+    background-color: #f5f5f7;
 }
