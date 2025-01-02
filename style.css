@@ -421,13 +421,12 @@ body{
 }
 
 .Project{
-    height: 100vh;
     width: 100%;
     color: black;
     padding: 90px 10% 45px 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -491,4 +490,9 @@ footer{
     width: 100%;
     background-color: black;
     color: white;
+}
+
+.myprojects{
+    height: 300px;
+
 }
